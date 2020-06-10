@@ -1,0 +1,234 @@
+/* CSS Document */
+
+
+
+/* sørger for at vi kan bruke æ. ø og å */
+ @charset "UTF-8";
+
+
+/* Definerer body taggen*/
+body{
+	color: black;
+	font-family: "Lucida Sans", sans-serif;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+}
+
+img {
+	max-height: 200px;
+  }
+
+/* Definerer img taggen*/
+.img {
+	margin: 5px;
+	max-height: 360px;
+	max-width: 250px;
+	}
+
+.img_Op
+{
+	opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+	grid-column: 1/5;
+	text-align: center;
+}
+
+/*Gjør at bilder får en scrollbar automatisk når vinduet blir lite*/
+.bilde {	
+	overflow: auto;
+}
+
+/*Tagg for definisjon av nedtelling til sommerferien*/
+#nedtelling{
+	grid-row: 1/6;
+	grid-column: 4/6;
+	margin-top: 5px;
+	font-size: 14px;
+	text-align: right;
+	
+}
+
+/*definerer iframe taggen*/
+iframe{
+	min-width: 20px;
+	max-width: 200px;
+	max-height:100px;
+	margin: 5px;
+}
+
+/*Gjør at filmer får en scrollbar automatisk når vinduet blir lite*/
+.film {
+	overflow: auto;
+}
+
+/*definerer stil på button/knapp taggen*/
+.button {
+	background-color: #4CAF50;
+	border-radius: 25px; /*Avrunnede hjørner */
+	border-style: outset;
+	color: white;
+	padding: 10px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+/* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
+main {
+	display: grid; /* Definerer at sidene skal vises med grids*/
+	/* grid-column-gap: 15px; mellomrom mellom gridsene horisontalt*/
+	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
+	text-align: center; /* all teks skal midtstilles som standard*/
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - vertikalt */
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
+}
+
+/* Definerer header taggen/griden*/
+.header {
+	grid-column: 1/6;
+	border-radius: 25px; /*Avrunnede hjørner */
+	text-align: center;
+
+
+	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+}
+
+/* Definerer h1 taggen = animasjon*/
+h1 {
+	position: relative;
+	animation-timing-function: linear;
+	animation: example_1 7s infinite;
+	animation-direction: alternate-reverse;
+}
+
+/* Definerer bevegelse i animasjonen (denne brukes i h1 taggen*/
+  @keyframes mymove {
+	from {right: 0px;}
+	to {right: 75px;}
+  }
+
+  @keyframes example_1 {
+	from {color:black;}
+	to {color:white;}
+  }
+/* Definerer meny_topp taggen/griden*/
+.meny_topp{
+	grid-column: 1/4;
+	grid-row: 1/6;
+	text-align: left;
+	font-size: 14px;
+	color: black;
+}
+
+
+/* Definerer meny_venstre taggen/griden*/
+.meny_venstre{
+	grid-column: 1/2;
+	border-radius: 25px; /*Avrunnede hjørner */
+	font-size: 14px;
+	text-align: left;
+	text-indent: 20px;
+	font-weight: bold;
+	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
+	min-height: 50%;
+	
+
+	
+}
+
+/* Definerer hovedvindu taggen/griden*/
+.hovedvindu{
+	grid-column: 2/6;
+	/*grid-row: auto;*/
+	border-radius: 25px; /*Avrunnede hjørner */
+	min-height: 500px;
+	padding: 15px;
+	margin-bottom: 7px;
+	margin-left: 15px;
+	color:black;
+	text-align: left;
+	/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+	background-repeat:repeat;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	float: inline-start;
+	min-height: 50%;
+	}
+
+
+	/* ul til bruk i vindu oppgave*/
+.hovedvindu_oppgave.ul1{
+	margin-left: 20px;
+
+}
+/* Definerer footer taggen/griden*/
+.footer {
+	width: 100%;
+	border-radius: 25px; /*Avrunnede hjørner */
+	text-align: center;
+	word-spacing: 10px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	bottom: 0;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	margin-left: 1px;
+	z-index: -1; /*Gjør at den havner bak, og ikke foran*/
+	position: fixed;
+	opacity: 0.90;
+	font-size: 10px;
+
+}
+
+  /* Definerer liste taggen*/
+  li {
+	
+	border-radius: 25px; /*Avrunnede hjørner */
+	padding: 5px;
+	margin: 7px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+	
+  }
+embed{
+	
+	border-radius: 25px; /*Avrunnede hjørner */
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+}
+/* Definerer nummerert/ordnet liste taggen*/
+  ol {
+	list-style-position: inside;
+	border-radius: 25px; /*Avrunnede hjørner */
+	padding: 5px;
+	margin-bottom: 7px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+
+/* Definerer unummerert/uordnet liste taggen*/
+ul {
+	
+	border-radius: 25px; /*Avrunnede hjørner */
+	padding: 5px;
+	margin-bottom: 7px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  /* Definerer en peker*/
+a{
+	 
+	  text-decoration: underline;
+	  color: black;
+  }
+
+  /* Definerer hvordan fargen forandrer seg for en peker når man holder musepeker over */
+  a:hover{
+	color: white;
+	background-color: #0099cc;
+	font-size: 16px;
+ }
+
+
+
