@@ -8,6 +8,7 @@
 
 /* Definerer body taggen*/
 body{
+
 	color: black;
 	font-family: "Lucida Sans", sans-serif;
 	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
@@ -24,12 +25,6 @@ img {
 	max-width: 250px;
 	}
 
-.img_Op
-{
-	opacity: 0.5; /*gjennomsiktighet/tydelighet*/
-	grid-column: 1/5;
-	text-align: center;
-}
 
 /*Gjør at bilder får en scrollbar automatisk når vinduet blir lite*/
 .bilde {	
@@ -38,59 +33,48 @@ img {
 
 /*Tagg for definisjon av nedtelling til sommerferien*/
 #nedtelling{
-	grid-row: 1/6;
+
 	grid-column: 4/6;
-	margin-top: 5px;
+	margin-top: 10px;
 	font-size: 14px;
 	text-align: right;
+	margin-right: 5px;
 	
 }
 
 /*definerer iframe taggen*/
 iframe{
-	min-width: 20px;
-	max-width: 200px;
-	max-height:100px;
-	margin: 5px;
+	width: 100%;
+	height: 1000px;
+	border-radius: 25px; /*Avrunnede hjørner */
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+	
 }
+
+
 
 /*Gjør at filmer får en scrollbar automatisk når vinduet blir lite*/
 .film {
 	overflow: auto;
 }
 
-/*definerer stil på button/knapp taggen*/
-.button {
-	background-color: #4CAF50;
-	border-radius: 25px; /*Avrunnede hjørner */
-	border-style: outset;
-	color: white;
-	padding: 10px 22px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-  }
 
 /* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
-main {
+.main {
 	display: grid; /* Definerer at sidene skal vises med grids*/
 	/* grid-column-gap: 15px; mellomrom mellom gridsene horisontalt*/
 	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
 	text-align: center; /* all teks skal midtstilles som standard*/
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - vertikalt */
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
 }
 
 /* Definerer header taggen/griden*/
 .header {
-	grid-column: 1/6;
+	display: grid;
+	grid-column:1/6;
 	border-radius: 25px; /*Avrunnede hjørner */
 	text-align: center;
-
-
 	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 }
 
@@ -114,12 +98,15 @@ h1 {
   }
 /* Definerer meny_topp taggen/griden*/
 .meny_topp{
-	grid-column: 1/4;
-	grid-row: 1/6;
+	grid-column:1/4;
 	text-align: left;
 	font-size: 14px;
 	color: black;
+	padding: 10px;
+	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border-radius: 25px; /*Avrunnede hjørner */
 }
+
 
 
 /* Definerer meny_venstre taggen/griden*/
@@ -130,11 +117,36 @@ h1 {
 	text-align: left;
 	text-indent: 20px;
 	font-weight: bold;
-	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
-	min-height: 50%;
+	padding: 10px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	
+}
+
+.panel-group
+{
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	
+}
+.panel.panel-default {
+ 
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 	
 
+}
+
+.panel-title
+{
+
+	padding: 5px;
 	
+	
+}
+
+.panel-heading
+{
+
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
 }
 
 /* Definerer hovedvindu taggen/griden*/
@@ -153,14 +165,10 @@ h1 {
 	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 	float: inline-start;
 	min-height: 50%;
+	font-size: 16px;
 	}
 
 
-	/* ul til bruk i vindu oppgave*/
-.hovedvindu_oppgave.ul1{
-	margin-left: 20px;
-
-}
 /* Definerer footer taggen/griden*/
 .footer {
 	width: 100%;
@@ -213,7 +221,10 @@ ul {
 	border-radius: 25px; /*Avrunnede hjørner */
 	padding: 5px;
 	margin-bottom: 7px;
+	margin-left: 20px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-image: linear-gradient(to right, rgb(220, 228, 230), #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
   }
 
   /* Definerer en peker*/
