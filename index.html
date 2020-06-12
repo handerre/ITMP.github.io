@@ -5,19 +5,19 @@
 
 <title>Startsiden - ITM</title> <!-- Tittel på HTML filen min i nettleservinduet-->
 
-<!-- Koblingen til .css filen (stilarket) mitt -->
+<!-- Koblingen til .css filen (stilarket) mitt, mm. -->
 <link href="CSS/minstil.css" rel="stylesheet" type="text/css">
-<link href="CSS/Dropdown.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
 
 </head>
 
 <body>
-
-<main>
+  <div class="main">
     <div class="meny_topp">
         &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
         &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
@@ -26,7 +26,6 @@
         &#128279; <a href="https://www.w3schools.com/Php/default.asp" target="_blank">PHP</a>
         &#128279; <a href="https://microbit.org"target="_blank">Microbit</a>
         &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
-       
         &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
       </div>
         <div id="nedtelling"> 
@@ -62,128 +61,161 @@
                 </script>
            </div>       
        
-         
-         
-
-    
 
     <div class="header">
         <h1>Informasjonteknologi og medieproduksjon</h1>
-      
-        
         </div>
     
 
         
-<div class="sidenav">
-  <a href="#about">Om</a>
+<div class="meny_venstre">
 
-  <!--Oppgaver -->
-  <button class="dropdown-btn">Oppgaver 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Server</a>
-    <a href="HTML/Oppgave_Nettside.html">Nettsider</a>
-    <a href="#">Databaser</a>
-    <button class="dropdown-btn">Tverrfaglig
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a href="#">Server</a>
-      <a href="#">Nettsider</a>
-      <a href="#">Undersøkelser</a>
-    </div>
-  </div>
-
-  <!-- Programvare-->
-  <button class="dropdown-btn">Programvare
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Server</a>
-    <a href="#">Programmering</a>
-    <a href="#">Sikkherhet</a>
-  </div>
-
-  <!--Fagstoff-->
-  <button class="dropdown-btn">Fagstoff
-    <i class="fa fa-caret-down"></i>
-  </button>
-
-  <div class="dropdown-container">
-    
-    <!-- Fag 1 -->
-    <button class="dropdown-btn">Produksjon og historiefortelling
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a href="#">Server</a>
-   
-      <a href="#">Hardware</a>
-      <a href="#">Utvikling</a>
-    </div>
-      
-    
-    <!-- Fag 2 -->
-    <button class="dropdown-btn">Teknologiforståelse
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a href="#">Server</a>
-      
-      <a href="#">Hardware</a>
-      <a href="#">Utvikling</a>
-    </div>
-    
-   
-    
- <!-- Fag 3 -->
-    
-    <button class="dropdown-btn">Konseptutvikling og programmering
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a href="#">Server</a>
-      
-      <a href="#">Hardware</a>
-      <a href="#">Utvikling</a>
-    </div>
-  </div>
+  <ul><a href="index.html">Om nettsiden</a></ul>
+  <div class="panel-group" id="accordion">
   
 
+    <!--meny del 1-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Konseptutvikling oppgaver</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+             <ul><a href="HTML/Oppgave_Nettside.html">Nettside</a></ul>
+            <ul>Server</ul>
+            <ul>Databaser</ul>
+            <ul>Undersøkelser</ul>
+    </div>
+      </div>
+    </div>
 
-   
-</div>
+     <!--meny del 2-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Konseptutvikling programvare</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul>Anbefalt programvare i faget</ul>
+      </div>
+      </div>
+    </div>
 
+     <!--meny del 3-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Konseptutvikling fagstoff</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
 
+     <!--meny del 4-->
 
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Teknologi oppgaver</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+  <!--meny del 5-->
 
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Teknologi programvare</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+  </div>
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
-     
+  <!--meny del 6-->
 
- 
-    
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Teknologi fagstoff</a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+  </div>
+
+    <!--meny del 7-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Historiefortelling oppgaver</a>
+          </h4>
+        </div>
+        <div id="collapse7" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+
+        <!--meny del 8-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Historie</a>
+          </h4>
+        </div>
+        <div id="collapse8" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+
+        <!--meny del 9-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Teknologi oppgaver</a>
+          </h4>
+        </div>
+        <div id="collapse9" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+
+  </div> 
+  </div>
+      
+
+  
     <div class="hovedvindu">
       
 
-      <div id="grad1"></div>
         <p>Hallo verden...</p>
         <br>
         <p></p>
@@ -204,7 +236,7 @@ for (i = 0; i < dropdown.length; i++) {
                     document.write(Date());
                     </script>
     </div>
-</main>
+  </div>
 
 <!-- Slutt på body og HTML -->
 </body>
