@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
+<meta charset="UTF-8">
+<html lang="nb-NO" class="">
+<head>
+
+<title>Opplæringsfilmer</title> <!-- Tittel på HTML filen min i nettleservinduet-->
+
+<!-- Koblingen til .css filen (stilarket) mitt -->
+<link href="../CSS/minstil.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+
+<main>
+    <div class="meny_topp">
+        
+        &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
+        &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
+        &#128279; <a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a>
+        &#128279; <a href="https://microbit.org"target="_blank">Microbit</a>
+        &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
+        &#128279; <a href="https://www.w3schools.com/python/default.asp" target="_blank">Python</a>
+        &#128279; <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+        &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
+      </div>
+        <div id="nedtelling"> 
+       
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jun 19, 2020 15:00:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="demo"
+                  document.getElementById("nedtelling").innerHTML = "Antall dager til sommerferien: "+ days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("nedtelling").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+        </div>
+
+    
+
+    <div class="header">
+        <h1>Opplæringsfilmer</h1>
+        
+        </div>
+    
+    
+    <div class="meny_venstre">
+        <ol>
+            <li>Oppgaven</li>
+            <ul>
+            <li>&#128279; <a href="Nettside_Oppgave.html">Oppgavebeskrivelse</a></li>
+            </ul>
+            <li>Ressurser</li>
+            <ul>
+            <li>&#128279; <a href="Nettside_Lover.html">Lov og forskrift </a></li>
+            <li>&#128279; <a href="Nettside_Kilder.html">Noen nyttige kilder </a></li>
+            <li>&#128279; <a href="Nettside_Filmer.html">Opplæringsfilmer </a></li>
+          </ul>
+          <li>Inspirasjon</li>
+          <ul>
+          <li>&#128279; <a href="Nettside_Escaperoom.html">Escaperoom </a></li> 
+          </ul>
+          </ol>
+        
+        
+    </div>
+       
+    
+    <div class="hovedvindu_filmer">
+      <div class="film">
+        <b>Hvordan fungerer internett?</b>
+      <br>
+        <iframe src="https://www.youtube.com/embed/5QlZLYS3cBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/gTXyGm4hZ9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <b>Grids</b>
+          <br>
+          <iframe src="https://www.youtube.com/embed/xLxLjeG4004" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/br-0i3U1VCA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <b>GitHub</b>
+        <br>
+        <iframe src="https://www.youtube.com/embed/kFa1U04LhDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <b>HTML og CSS</b>
+        <br>
+        <iframe src="https://www.youtube.com/embed/yhzchhv-MHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="hovedvindu_filmer1">
+    <div class="film">
+        <b>Scratch</b>
+        <br>
+        <iframe src="https://www.youtube.com/embed/VIpmkeqJhmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/pi6CNLua7Nk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <b>Microbit</b>
+        <br>
+        <iframe src="https://www.youtube.com/embed/1NjHwcgO4FU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <b>Universell utforming</b>
+        <br>
+        <iframe src="https://www.youtube.com/embed/oNpPOnji5Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/a5aQPdfh7Cc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <b>Åndsverksloven</b>
+        <br>
+        <iframe src="https://www.youtube.com/embed/CGs5-6K43ow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+  <br>
+          
+    </div>
+        </div>
+ 
+     
+    <div class="footer">
+        <p>Copyright &copy; 2020 Bent, Karin og Frode 
+            <script>
+              document.write(Date());
+              </script>
+    </div>
+</main>
+
+<!-- Slutt på body og HTML -->
+</body>
+</html>
