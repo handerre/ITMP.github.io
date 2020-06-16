@@ -43,7 +43,7 @@ img {
 }
 
 /*definerer iframe taggen*/
-iframe{
+.iframe1{
 	width: 100%;
 	height: 1000px;
 	border-radius: 25px; /*Avrunnede hjørner */
@@ -51,6 +51,14 @@ iframe{
 
 	
 }
+/*definerer iframe taggen*/
+iframe{
+	min-width: 20px;
+	max-width: 200px;
+	max-height:100px;
+	margin: 5px;
+}
+
 
 
 
@@ -167,7 +175,37 @@ h1 {
 	min-height: 50%;
 	font-size: 16px;
 	}
+/* Definerer hovedvindu taggen/griden til visning av filmer da denne er litt annerledes*/
+.hovedvindu_filmer{
+	grid-column: 2/4;
+	/*grid-row: auto;*/	
+	border-radius: 25px; /*Avrunnede hjørner */
+	min-height: 500px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	margin-left: 15px;
+	
+	text-align: left;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 
+	float: inline-start;
+}
+/* Definerer hovedvindu taggen/griden til visning av filmer, da denne er litt annerledes*/
+.hovedvindu_filmer1{
+	grid-column: 4/6;
+	/*grid-row: auto;*/
+	border-radius: 25px; /*Avrunnede hjørner */
+	min-height: 500px;
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	
+	text-align: left;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+	float: inline-start;
+}
 
 /* Definerer footer taggen/griden*/
 .footer {
@@ -202,6 +240,9 @@ embed{
 	
 	border-radius: 25px; /*Avrunnede hjørner */
 	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	height: 75%;
+	width: 100%;
+	overflow: hidden;
 }
 /* Definerer nummerert/ordnet liste taggen*/
   ol {
