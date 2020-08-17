@@ -1,0 +1,205 @@
+<!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
+<meta charset="UTF-8">
+<html lang="nb-NO" class="">
+<head>
+
+<title>Oppgave introduksjon nettside </title> <!-- Tittel på HTML filen min i nettleservinduet-->
+
+<!-- Koblingen til .css filen (stilarket) mitt, mm. -->
+<link href="../CSS/minstil.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="meny_topp">
+        &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
+        &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
+        &#128279; <a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a>
+        &#128279; <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+        &#128279; <a href="https://www.w3schools.com/Php/default.asp" target="_blank">PHP</a>
+        &#128279; <a href="https://microbit.org"target="_blank">Microbit</a>
+        &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
+        &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
+      </div>
+        <div id="nedtelling"> 
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jun 18, 2021 12:00:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="demo"
+                  document.getElementById("nedtelling").innerHTML = "Antall dager til sommerferien: "+ days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("nedtelling").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+           </div>       
+       
+
+    <div class="header">
+        <h1>Grunnleggende HTML/CSS </h1>
+        </div>
+    
+
+        
+<div class="meny_venstre">
+
+ 
+  <div class="panel-group" id="accordion">
+    
+      <!--meny del 10-->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">ITM</a>
+          </h4>
+        </div>
+        <div id="collapse10" class="panel-collapse collapse in">
+          <div class="panel-body">
+               <ul><a href="https://www.udir.no/lk20/ikm01-01" target="blank" >Læreplan</a></ul>
+              <ul>Lærebedrifter</ul>
+              
+              <ul>Om sidene</ul>
+      </div>
+        </div>
+      </div>
+
+    <!--meny del 1-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Programvare</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul>Anbefalt programvare</ul>
+      </div>
+      </div>
+    </div>
+
+     <!--meny del 2-->
+   
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Oppgaver</a>
+        </h4>
+      </div>
+
+      
+      <div id="collapse1" class="panel-collapse collapse ">
+
+        
+        <div class="panel-body">
+             <ul><a href="HTML/Oppgave_Nettside.html">Nettside</a></ul>
+             <ul>App</ul>
+            <ul>Databaser</ul>
+            
+            <ul>Escaperoom</ul>
+            
+           
+    </div>
+    
+      </div>
+    </div>
+
+    
+     <!--meny del 3-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Fagstoff</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul><a href="HTML/Nettside_Filmer.html">Instruksjonsfilmer</a></ul>
+          
+      
+      </div>
+      </div>
+    </div>
+
+     <!--meny del 4-->
+
+    
+<!--Utgår-->
+
+ 
+
+ 
+
+    
+     
+
+  </div> 
+  </div>
+      
+
+  <div class="hovedvindu">
+
+    <div id="grad1"></div>
+   
+      <p><b>Kompetansemål etter konseptutvikling og programmering</b></p>
+      
+      <p><b>Mål for opplæringen er at eleven skal kunne</b></p>
+      <i>
+      <li>Anvende regelverk for bruk og formidling av innhold i egen produksjon og reflektere over ansvar og etikk knyttet til bruk og formidling av innhold i egen produksjon</li>
+       <li>Utforske og beskrive sammenhenger mellom løsninger, kundens behov og brukernes forutsetninger og erfaringer</li>
+       <li>Bruke oppmerkingsspråk og stilsett i ulike produksjoner</li>
+        <li>Programmering til å løse praktiske utfordringer og til å fortelle interaktive historier
+        <li>Utforske og anvende verktøy for datamodellering i oppbygging av databaser</li>
+        <li>Visualisere og utvikle konsepter og ideer tilpasset ulike plattformer</li>
+        <p>		<b>Oppgavetekst og kriterer for vurdering av utvikling av nettsider</b></p>
+
+        <embed src="../PDF/Oppgave_Nettside.pdf" frameborder="0" allowfullscreen>
+            <p><a href="../PDF/Oppgave_Nettside.pdf">Vis i fullskjerm</a></p></embed>
+  
+      </i>
+    
+
+  
+  </div>
+     
+    <div class="footer">
+     
+            <p>Copyright &copy; 2020 </p>
+            <script>
+              document.write(Year());
+              </script>
+                Dagens dato: <script>
+                    document.write(Date());
+                    </script>
+    </div>
+  </div>
+
+<!-- Slutt på body og HTML -->
+</body>
+</html>
