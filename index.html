@@ -1,11 +1,11 @@
 <!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
-<meta charset="UTF-8">
-<html lang="nb-NO" class="">
-<head>
+<meta charset="UTF-8"> <!-- Tagg for å bruke æ,ø og å-->
+<html lang="nb-NO" class=""> <!-- Definerer norsk som språk - en del av universell utforming-->
+<head> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
 
 <title>Startsiden - ITM - konseptutvikling og programmering </title> <!-- Tittel på HTML filen min i nettleservinduet-->
 
-<!-- Koblingen til .css filen (stilarket) mitt, mm. -->
+<!-- Koblingen til .css filen (stilarket) mitt, og andre stilark, eksterne bibliotek, script, mm. - for at siden skal være mest mulig fleksibel og brukervennlig -->
 <link href="CSS/minstil.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,12 +13,11 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
-
 </head>
 
-<body>
-  <div class="main">
-    <div class="meny_topp">
+<body> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
+  <div class="main"> <!-- Hovedklasse, den som definerer overordnet for bruk av struktur på siden - hvordan feks grids er brukt på mine sider -->
+    <div class="meny_topp"> <!-- Toppmenyen min -->
         &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
         &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
         &#128279; <a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a>
@@ -28,7 +27,7 @@
         &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
         &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
       </div>
-        <div id="nedtelling"> 
+        <div id="nedtelling"> <!-- Script for nedtelling av tid. Varier på de ulike siden i forhold til de uliuke ferien i løpet av et skoleår-->
             <script>
                 // Set the date we're counting down to
                 var countDownDate = new Date("Jun 18, 2021 12:00:00").getTime();
@@ -67,9 +66,7 @@
         </div>
     
 
-        
 <div class="meny_venstre">
-
  
   <div class="panel-group" id="accordion">
     
