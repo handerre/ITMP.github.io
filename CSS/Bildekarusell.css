@@ -1,0 +1,29 @@
+
+    .Bildekarusell {
+
+
+animation-name: example;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+display: inline;
+grid-column: 2/4;
+min-height: 300px;
+
+border-radius: 25px; /*Avrunnede hjørner */
+
+margin-left: 15px; 
+
+}
+
+.Bildekarusell:hover {
+width: 1200px;
+height: 700px;
+}
+
+@keyframes example {
+20%   {background-image: url(../Bilder/dreams.png);}
+50%  {background-image: url(../Bilder/Fjell.png);}
+75%   {background-image: url(../Bilder/smoke.png);}
+100%  {background-image: url(../Bilder/Læringsgropen.png);}
+}
+
