@@ -1,26 +1,23 @@
 
-    .Bildekarusell {
-
-
-animation-name: example;
-animation-duration: 20s;
-animation-iteration-count: infinite;
-display: inline;
-grid-column: 2/4;
-min-height: 300px;
-
+.Bildekarusell /* Navnet på classen */
+{
+animation-name: example; /* Navnet på animasjonen*/
+animation-duration: 20s; /* Hvor lenge skal den vare, før den gjentar seg selv */
+animation-iteration-count: infinite; /* Hvor mange ganger skal den gjentas? - Her uendelig */
+grid-column: 2/5; /* Hvor mange grid kolonner som skal brukes */
+min-height: 300px; /* Minimumshøyde på classen */
 border-radius: 25px; /*Avrunnede hjørner */
-
-margin-left: 15px; 
-
+margin-left: 15px; /* Hvor langt fra kanten classen skal være*/
 }
 
-.Bildekarusell:hover {
-width: 1200px;
-height: 700px;
+.Bildekarusell:hover /* Hva skal skej når en har musepekeren over animasjonen (classen) */
+{
+width: 1200px; /* Ny bredde */
+height: 700px; /* Ny høyde */
 }
 
-@keyframes example {
+@keyframes example /* nøkkelbilder/keyframes som skal brukes i animasjonen ved navn example */ 
+{
 20%   {background-image: url(../Bilder/dreams.png);}
 50%  {background-image: url(../Bilder/Fjell.png);}
 75%   {background-image: url(../Bilder/smoke.png);}
