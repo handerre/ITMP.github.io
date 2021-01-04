@@ -16,6 +16,7 @@ body{
 
 img {
 	max-height: 300px;
+	max-width: 250px;
   }
 
 /* Definerer img taggen*/
@@ -91,7 +92,7 @@ iframe{
 h1 {
 	position: relative;
 	animation-timing-function: linear;
-	animation: example_1 7s infinite;
+	animation: example_1 15s infinite;
 	animation-direction: alternate-reverse;
 }
 
@@ -271,21 +272,25 @@ ul {
 	background-image: linear-gradient(to right, rgb(220, 228, 230), #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 
   }
-
-  /* Definerer en peker*/
-a{ 
-	  color: black;
-	  
+/* unvisited link */
+a:link {
+	color:purple;
   }
-
-  /* Definerer hvordan fargen forandrer seg for en peker når man holder musepeker over */
-  a:hover{
-	
-	background-color: #0099cc;
-	font-size: 16px;
-	text-decoration: underline;
-	color: antiquewhite;
- }
+  
+  /* visited link */
+  a:visited {
+	color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+	color: blue;
+  }
 
 
 
