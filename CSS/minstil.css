@@ -1,4 +1,5 @@
-/* CSS Document */
+ 
+ /* CSS Document */
 
 
 
@@ -121,12 +122,13 @@ h1 {
 
 /* Definerer meny_venstre taggen/griden*/
 .meny_venstre{
-	grid-column: 1/2;
+	grid-column: 1/1;
 	border-radius: 25px; /*Avrunnede hjørner */
 	font-size: 14px;
 	text-align: left;
 	text-indent: 20px;
 	padding: 10px;
+	
 	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 	
 }
@@ -181,6 +183,74 @@ h1 {
 	min-height: 50%;
 	font-size: 16px;
 	}
+	.hv{
+		grid-column: 2/3;
+		/*grid-row: auto;*/
+		border-radius: 25px; /*Avrunnede hjørner */
+		display: inline-block;
+		min-height: 500px;
+		padding: 15px;
+		margin-bottom: 7px;
+		margin-left: 15px;
+		color:black;
+		text-align: left;
+		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+		
+		min-height: 50%;
+		font-size: 16px;
+		}
+	
+	.hv1{
+		grid-column: 3/4;
+		/*grid-row: auto;*/
+		border-radius: 25px; /*Avrunnede hjørner */
+		display: inline-block;
+		min-height: 500px;
+		padding: 15px;
+		margin-bottom: 7px;
+		margin-left: 15px;
+		color:black;
+		text-align: left;
+		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+		
+		min-height: 50%;
+		font-size: 16px;
+		}
+	
+	.hv2{
+		grid-column: 4/5;
+		/*grid-row: auto;*/
+		border-radius: 25px; /*Avrunnede hjørner */
+		display: inline-block;
+		min-height: 500px;
+		padding: 15px;
+		margin-bottom: 7px;
+		margin-left: 15px;
+		color:black;
+		text-align: left;
+		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+		background-repeat:repeat;
+		background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+		min-height: 50%;
+		font-size: 16px;
+		}
+		.hv3{
+			grid-column: 5/6;
+			/*grid-row: auto;*/
+			border-radius: 25px; /*Avrunnede hjørner */
+			display: inline-block;
+			min-height: 500px;
+			padding: 15px;
+			margin-bottom: 7px;
+			margin-left: 15px;
+			color:black;
+			text-align: left;
+			/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+			background-repeat:repeat;
+			background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+			min-height: 50%;
+			font-size: 16px;
+			}
 /* Definerer hovedvindu taggen/griden til visning av filmer da denne er litt annerledes*/
 .hovedvindu_filmer{
 	grid-column: 2/4;
