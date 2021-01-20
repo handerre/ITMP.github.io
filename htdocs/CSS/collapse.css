@@ -1,0 +1,21 @@
+.panel.panel-default {
+    grid-column: 1/2;
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+    border-radius: 25px; /*Avrunnede hjørner */
+
+}
+
+.panel-title
+{
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+    border-radius: 25px; /*Avrunnede hjørner */
+    font-size: large;
+
+}
+
+.panel-heading
+{
+    border-radius: 25px; /*Avrunnede hjørner */
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+}
