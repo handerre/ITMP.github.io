@@ -16,8 +16,8 @@ body{
 }
 
 img {
-	max-height: 300px;
-	max-width: 250px;
+	max-height: 200px;
+	max-width: 150px;
   }
 
 /* Definerer img taggen*/
@@ -56,9 +56,9 @@ img {
 /*definerer iframe taggen*/
 iframe{
 	min-width: 20px;
-	max-width: 200px;
-	max-height:100px;
-	margin: 5px;
+	max-width: 150px;
+	max-height: 75px;
+	margin-right: 5px;
 }
 
 
@@ -179,7 +179,7 @@ h1 {
 	text-align: left;
 	/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
 	background-repeat:repeat;
-	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	/*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 	min-height: 50%;
 	font-size: 16px;
 	}
@@ -230,7 +230,7 @@ h1 {
 		text-align: left;
 		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
 		background-repeat:repeat;
-		background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+		/*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 		min-height: 50%;
 		font-size: 16px;
 		}
@@ -247,7 +247,7 @@ h1 {
 			text-align: left;
 			/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
 			background-repeat:repeat;
-			background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+			/*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 			min-height: 50%;
 			font-size: 16px;
 			}
@@ -261,10 +261,7 @@ h1 {
 	margin-top: 15px;
 	margin-bottom: 7px;
 	margin-left: 15px;
-	
 	text-align: left;
-	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
-
 	float: inline-start;
 }
 /* Definerer hovedvindu taggen/griden til visning av filmer, da denne er litt annerledes*/
@@ -276,10 +273,7 @@ h1 {
 	padding: 15px;
 	margin-top: 10px;
 	margin-bottom: 7px;
-	
 	text-align: left;
-	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
-
 	float: inline-start;
 }
 
