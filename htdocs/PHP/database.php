@@ -35,7 +35,7 @@
 
    <input type="submit" name="leggtil" value="Legg til">
 </form>
-     </div>
+    
 
   
 

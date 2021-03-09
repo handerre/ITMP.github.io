@@ -307,14 +307,11 @@ a{
 	color: antiquewhite;
  }
 
- table, th, td, tr{
+ table, th, tr, td {
 	text-align: center;
 	border-style: solid;
 	border-color:sandybrown;
-  }
-  th{
-	text-align: center;
-	min-width: 120px;
 
-   }
+  }
+
   

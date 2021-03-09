@@ -1,6 +1,6 @@
 
 <?php
-{
+
    // Tilkoblingsinformasjon	
    $tjener = "localhost";
    $brukernavn = "root";
@@ -71,7 +71,7 @@ while($rad = $resultat->fetch_assoc()) {
 
 echo "</table>"; // Avslutter tabellen
 
-}
+
 ?>
 
 
