@@ -4,6 +4,9 @@ include 'kobling.php';
     // Angi UTF-8 som tegnsett
     $kobling->set_charset("utf8");
 
+      // Opprette en kobling
+      $kobling = new mysqli($tjener, $brukernavn, $passord, $database);
+
 
     // Lagrer skjemafeltene i enklere navn
     $AID = $_POST["ArtikkelID"];
@@ -15,9 +18,9 @@ include 'kobling.php';
 
     if($kobling->query($sql)) {
         echo "Spørringen $sql ble gjennomført.";
-    } else {
+    }  /*else {
         echo "Noe gikk galt med spørringen $sql ($kobling->error).";
-    }
+    }*/
     
   
 

@@ -1,9 +1,14 @@
 
 
 <?php
+   include 'kobling.php';
    include 'INSERT_Forfatter.php';
    include 'INSERT_Artikke.php';
    include 'INSERT_F_AV_A.php';
+   include 'Delete.php';
+   
+   // Opprette en kobling
+  $kobling = new mysqli($tjener, $brukernavn, $passord, $database);
    ?>
   
 </p>
@@ -34,6 +39,7 @@
    </p>
 
    <input type="submit" name="leggtil" value="Legg til">
+   <input type="submit" name="deletedata" value="Slett data">
 </form>
     
 

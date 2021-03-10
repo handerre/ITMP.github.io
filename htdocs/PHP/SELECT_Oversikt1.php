@@ -1,11 +1,8 @@
 
 <?php
 
-   // Tilkoblingsinformasjon	
-   $tjener = "localhost";
-   $brukernavn = "root";
-   $passord = "root";
-   $database = "Kilder";
+include 'kobling.php';
+
 
    // Opprette en kobling
    $kobling = new mysqli($tjener, $brukernavn, $passord, $database);

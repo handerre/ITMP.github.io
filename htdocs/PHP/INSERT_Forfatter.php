@@ -2,6 +2,8 @@
 include 'kobling.php';
  
  
+  // Opprette en kobling
+  $kobling = new mysqli($tjener, $brukernavn, $passord, $database);
 
 
     // Lagrer skjemafeltene i enklere navn
@@ -20,9 +22,9 @@ include 'kobling.php';
 
     if($kobling->query($sql)) {
         echo "Spørringen $sql ble gjennomført.";
-    } else {
+    } /*else {
         echo "Noe gikk galt med spørringen $sql ($kobling->error).";
-    }
+    }*/
     
   
 

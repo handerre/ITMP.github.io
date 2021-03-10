@@ -165,6 +165,8 @@
 <?php
 
    include 'SELECT_Oversikt1.php';
+   include 'Delete.php';
+ 
    ?>
     </div>
    

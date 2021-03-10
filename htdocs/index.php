@@ -167,6 +167,11 @@
    
    
    include 'PHP/database.php';
+   include 'PHP/kobling.php';
+   include 'PHP/SELECT_Oversikt1.php';
+   include 'Delete.php';
+   
+   
    ?>
     </div>
    
